@@ -55,7 +55,7 @@ const textureGrassNormal = textureLoader.load(
 const textureGrassRoughness = textureLoader.load(
   "../textures/grass/wispy-grass-meadow_roughness.png"
 );
-console.log(textureGrass);
+console.log(THREE);
 
 const materialGrass = new THREE.MeshStandardMaterial();
 materialGrass.map = textureGrass;

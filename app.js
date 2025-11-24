@@ -1,7 +1,9 @@
 import * as THREE from "three";
+
 console.log(THREE);
+
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
-import { Pane } from "three/addons//tweakpane/dist/tweakpane.js";
+// import { Pane } from "three/addons//tweakpane/dist/tweakpane.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
 const devMode = false;
@@ -327,23 +329,23 @@ window.addEventListener("resize", () => {
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
-if (devMode) {
-  const pane = new Pane();
-  pane.addBinding(standardMaterial, "metalness", {
-    min: 0,
-    max: 1,
-    label: "metalness",
-  });
-  pane.addBinding(standardMaterial, "roughness", {
-    min: 0,
-    max: 1,
-    label: "roughness",
-  });
+// if (devMode) {
+//   const pane = new Pane();
+//   pane.addBinding(standardMaterial, "metalness", {
+//     min: 0,
+//     max: 1,
+//     label: "metalness",
+//   });
+//   pane.addBinding(standardMaterial, "roughness", {
+//     min: 0,
+//     max: 1,
+//     label: "roughness",
+//   });
 
-  pane.addBinding(standardMaterial, "envMapIntensity", {
-    min: 0,
-    max: 2,
-  });
-} else {
-  scene.remove(axesHepler, gridHelper, pointLightHelper);
-}
+//   pane.addBinding(standardMaterial, "envMapIntensity", {
+//     min: 0,
+//     max: 2,
+//   });
+// } else {
+//   scene.remove(axesHepler, gridHelper, pointLightHelper);
+// }

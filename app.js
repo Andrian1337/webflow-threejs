@@ -1,6 +1,7 @@
 import * as THREE from "three";
+console.log(THREE);
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
-import { Pane } from "../vendor/tweakpane/dist/tweakpane.js";
+import { Pane } from "three/addons//tweakpane/dist/tweakpane.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
 const devMode = false;
@@ -55,7 +56,7 @@ const textureGrassNormal = textureLoader.load(
 const textureGrassRoughness = textureLoader.load(
   "../textures/grass/wispy-grass-meadow_roughness.png"
 );
-console.log(THREE);
+
 
 const materialGrass = new THREE.MeshStandardMaterial();
 materialGrass.map = textureGrass;
